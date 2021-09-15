@@ -1,0 +1,42 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+.header{
+    background:red;
+    padding:25px 0px;
+}
+
+.nav{
+    background: blue;
+    padding:12px 0px;
+}
+
+.left{
+    background: yellow;
+    height: 450px;
+
+    display: inline-block;
+    width: 20%;
+}
+
+.center{
+background:pink;
+height: 450px;
+display: inline-block;
+width: 59%;
+}
+
+.right{
+background: cyan;
+height: 450px;
+display: inline-block;
+width: 20%;
+}
+
+.footer{
+    background: black;
+    height: 25px;
+
+}
