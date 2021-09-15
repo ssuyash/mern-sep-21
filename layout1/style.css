@@ -16,7 +16,6 @@
 .left{
     background: yellow;
     height: 450px;
-
     display: inline-block;
     width: 20%;
 }
@@ -25,7 +24,8 @@
 background:pink;
 height: 450px;
 display: inline-block;
-width: 59%;
+width: 60%;
+margin-left:-4px;
 }
 
 .right{
@@ -33,6 +33,7 @@ background: cyan;
 height: 450px;
 display: inline-block;
 width: 20%;
+margin-left:-4px;
 }
 
 .footer{

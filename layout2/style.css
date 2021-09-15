@@ -1,0 +1,36 @@
+*{
+margin:0px;
+padding:0px;
+}
+
+.header{
+    height: 60px;
+    background: red     ;
+}
+
+.nav{
+    height: 30px;
+    background:pink;
+}
+
+.left, .center, .right{
+    height: 550px;
+}
+
+.left{
+    backgroun:rgba();
+
+    width: 20%;
+    float:left;
+}
+
+
+.center{
+    background:blue;
+    width: 60%;
+}
+
+.right{
+    background: green;
+    width: 20%;
+}
