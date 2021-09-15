@@ -18,8 +18,7 @@ padding:0px;
 }
 
 .left{
-    backgroun:rgba();
-
+    background:rgba(123, 215, 66, 1);
     width: 20%;
     float:left;
 }
@@ -28,9 +27,21 @@ padding:0px;
 .center{
     background:blue;
     width: 60%;
+    float:left;
 }
 
 .right{
     background: green;
     width: 20%;
+    float:left;
 }
+
+.footer{
+    height: 50px;
+    background:pink;
+}
+
+.clear-fix{
+    clear: both;
+}
+
