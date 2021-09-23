@@ -1,0 +1,40 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    min-height: 200vh;
+}
+
+.div-1, .div-2 {
+    height: 350px;
+    width: 350px;
+}
+.div-1{
+   background: red;
+    /* position: relative; */
+}
+
+.div-2{
+    background:yellow;
+    position: absolute;
+    top: 10px;
+    left:10px;
+}
+
+.div-3{
+    width: 50px;
+    height: 50px;
+    background:blue;
+    border-radius: 100%;
+    position: fixed;
+    right: 0;
+    bottom: 10px;
+}
+
+.div-4{
+    background:pink;
+    height: 50px;
+    position: sticky;
+    top:10px;
+}

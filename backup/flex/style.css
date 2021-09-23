@@ -1,0 +1,25 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+.container {
+    display: flex;
+    height: 300px;
+}
+
+.item-1{
+    background: green;
+    flex-grow: 1;
+    align-self: center;
+}
+
+.item-2{
+    background:pink;
+    order:1;
+    flex-grow: 1;
+}
+.item-3{
+    background: yellow;
+    flex-grow: 1;
+}
