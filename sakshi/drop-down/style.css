@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    color:rgb(139, 133, 133);
+}
+
+
+.text-color{
+    color:rgb(245, 241, 241);
+}
+
+
+/*-------text font------*/
+.h1-font{
+    font-size: 50px;
+}
+.text-font{
+    font-size: 13px;
+    word-spacing: -1px;
+}
+.bg-color{
+    background: rgb(90, 86, 86);
+}
+.border-box{
+    border:1px solid rgb(48, 45, 45);
+}
+.d-flex{
+    display: flex;
+}
+.head{
+    justify-content: space-between;
+}
+header{
+    background-color: #333333;
+    color: #C0BAB6;
+    width:100%;
+}
+.container-sm{
+    width: 74%;
+}
+
+.para{
+   
+    margin-top:-1em;
+}
+input{
+    border:1px solid white;
+}
+.search a{
+    text-decoration: none;
+    color:white;
+    background: orange;
+    padding-top:2px;
+    padding-bottom: 2px;
+}
+.text-link{
+    background: #000;
+}
+.text-link ul li{
+    list-style-type:none
+}
+
+.text-link ul li a{
+    text-decoration: none;
+margin:10px;
+    color:white;
+    text-transform: uppercase;
+}
+.link-div{
+    position: relative;
+}
+.inner-ul{
+    position: absolute;
+        background: grey;
+    min-width: 140px;
+    display: none;
+}
+.inner-ul ul{
+    padding: 10px 0px;
+    display: block;
+}
+.inner-ul li:hover{
+   
+background: orange;
+}
+.link-div:hover .inner-ul{
+    display: block;
+}
+
+.link-p{
+    text-align: right;
+}
+.read-link a{
+    text-decoration: none;
+    color:orange;
+    font-weight: bold;
+}
+.third{
+    justify-content: space-between;
+}
+
+.div-border{
+    border:5px solid rgba(202, 198, 198,0.6);
+    margin-left:1em;
+}
+.view{
+   
+    margin-right: 100px;
+    color:orange;
+    font-weight: bold;
+    font-size:2em;
+}
+
+.flex_grow{
+    flex:1
+}
+.border-top{
+    border-top:1px solid grey;
+}
+.div-border1{
+    border:5px solid rgba(202, 198, 198,0.6);
+}
+
+.quick-link ul li{
+    list-style-type:none;
+    margin-left:-30px;
+    padding-bottom: 10px;
+}
+.quick-link ul li a{
+    text-decoration: none;
+    color:orange;
+    font-size:14px;
+}
+.text-fontp{
+    font-size: 12px;
+}
+.div-4{
+    margin-top:20px;
+}
+.foot{
+    justify-content: space-around;
+    background-color: #333333;
+}
+.font-style{
+    font-family: 'Scheherazade New', serif;
+    font-style: italic;
+}
+.font-style-h{
+    font-family: 'Scheherazade New', serif;
+  
+}
+span{
+    vertical-align: sub;
+}
+.p-link{
+    color:orange;
+    text-decoration: none;
+}
+.p-link:hover{
+    color:orange;
+}
