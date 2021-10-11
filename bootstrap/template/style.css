@@ -1,0 +1,36 @@
+.bg-danger-custom{
+    background-color: pink!important;
+}
+
+
+@media (min-width: 576px) { 
+
+    .bg-danger-custom{
+        background-color: green!important;
+    }
+    
+ }
+
+@media (min-width: 768px) { 
+
+    .bg-danger-custom{
+        background-color: blue!important;
+    }
+    
+ }
+
+@media (min-width: 992px) { 
+    .bg-danger-custom{
+        background-color: yellow!important;
+    }
+    
+    
+ }
+
+@media (min-width: 1200px) { 
+    .bg-danger-custom{
+        background-color: cyan!important;
+    }
+    
+    
+ }
