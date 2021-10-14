@@ -1,0 +1,29 @@
+/* https://bennettfeely.com/clippy/ */
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+
+
+.div{
+    height: 150px;
+    width: 150px;
+    /* margin-left: 350px;
+    margin-top:150px; */
+    background-color: red;
+    /* transform: rotate(-10deg);
+    transform-origin: 0% 100%; */
+    /* transform:scale(0.5); */
+    /* transform:skewX(10deg) skewY(10deg); */
+    transform:translateX(110px);
+    transition: all 0.5s ;
+    /* clip-path: polygon(50% 0%,  100% 50%, 50% 100%, 0% 50%); */
+    clip-path: polygon(55% 28%, 100% 51%, 13% 66%, 9% 100%, 56% 41%, 0% 0%);
+
+}
+
+.div:hover{
+    background-color: pink;
+}
