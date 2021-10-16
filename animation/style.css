@@ -1,4 +1,8 @@
 /* https://bennettfeely.com/clippy/ */
+:root{
+     --primary: yellow;
+     --header-height:30px;
+}
 
 *{
     margin:0px;
@@ -12,18 +16,260 @@
     width: 150px;
     /* margin-left: 350px;
     margin-top:150px; */
-    background-color: red;
+    /* background-color: red; */
     /* transform: rotate(-10deg);
     transform-origin: 0% 100%; */
     /* transform:scale(0.5); */
     /* transform:skewX(10deg) skewY(10deg); */
-    transform:translateX(110px);
-    transition: all 0.5s ;
+    /* transform:translateX(110px);
+    transition: all 1s ; */
     /* clip-path: polygon(50% 0%,  100% 50%, 50% 100%, 0% 50%); */
-    clip-path: polygon(55% 28%, 100% 51%, 13% 66%, 9% 100%, 56% 41%, 0% 0%);
+    /* clip-path: polygon(55% 28%, 100% 51%, 13% 66%, 9% 100%, 56% 41%, 0% 0%); */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: move 2s infinite ;
+    position: relative;
+    border-radius: 50%;
+    border:10px solid black;
+    border-top-color: black;
+    border-bottom-color: green ;
+    border-left-color: yellow;
+    border-right-color: pink;
+    
 
 }
 
 .div:hover{
     background-color: pink;
 }
+
+@keyframes move {
+   0%{
+    /* left:0px; */
+    transform:rotate(0deg);
+   }
+
+   50%{
+    /* left:200px; */
+    transform:rotate(360deg);
+
+   }
+
+   100%{
+    /* left:0px; */
+    transform:rotate(0deg);
+
+   }
+}
+
+
+.loader{
+    display: flex;
+    width: 350px;
+    margin-top:150px;
+    margin-left: 350px;
+
+    justify-content: space-between;
+}
+
+
+.boll{
+   width: 25px;
+   height: 25px;
+    /* border:1px solid black; */
+    border-radius: 50%;
+}
+
+.boll-1{
+    animation: first-bubble 1s infinite;
+    
+}
+
+.boll-2{
+    animation: second-bubble 1s infinite;
+    
+}
+
+.boll-3{
+    animation: third-bubble 1s infinite;
+    
+}
+
+.boll-4{
+    animation: fourth-bubble 1s infinite;
+    
+}
+
+@keyframes first-bubble {
+    0%{
+        transform:scale(1);
+        background-color: aqua;
+
+    }
+    25%{
+        transform:scale(2);
+
+    }
+    50%{
+        transform:scale(3);
+        background-color: pink;
+
+    }
+    75%{
+        transform:scale(4);
+        background-color: yellow;
+
+    }
+    100%{
+        transform:scale(1);
+        background-color: aqua;
+
+
+    }
+}
+
+
+
+@keyframes second-bubble {
+    0%{
+        transform:scale(2);
+    background-color: yellow;
+
+    }
+    25%{
+        transform:scale(3);
+        background-color: aqua;
+
+
+    }
+    50%{
+
+        transform:scale(4);
+        background-color: pink;
+
+    }
+    75%{
+        transform:scale(1);
+
+    }
+    100%{
+        transform:scale(2);
+        background-color: yellow;
+
+
+    }
+}
+
+
+@keyframes third-bubble {
+    0%{
+        transform:scale(3);
+        background-color: pink;
+
+    }
+    25%{
+        transform:scale(4);
+    background-color: yellow;
+
+
+    }
+    50%{
+        transform:scale(1);
+        background-color: aqua;
+
+    }
+    75%{
+        transform:scale(2);
+    }
+    100%{
+        transform:scale(3);
+        background-color: pink;
+
+    }
+}
+
+
+@keyframes fourth-bubble {
+    0%{
+        transform:scale(4);
+        background-color: --var(--primary);
+
+    }
+    25%{
+        transform:scale(1);
+        background-color: pink;
+
+
+    }
+    50%{
+        transform:scale(2);
+    background-color: yellow;
+
+    }
+    75%{
+        transform:scale(3);
+        background-color: aqua;
+
+    }
+    100%{
+        transform:scale(4);
+        background-color: --var(--primary);
+
+    }
+}
+
+
+
+.loading-indicator{
+    height: 15px;
+    width: 30%;
+    border:1px solid gray;
+}
+
+.indicator{
+    width: 20%;
+    background-color: var(--primary);
+    height: 15px;
+    transition: width 1s;
+}
+
+.img-card{
+    max-width: 350px;
+    border-radius:10px;
+    max-height: 450px;
+    overflow: hidden;
+    /* margin-top:calc(100vh - var(--header-height)); */
+
+
+}
+.img-card img{
+    width: 100%;
+    /* filter: blur(10px); */
+    /* filter:brightness(100%) */
+    /* filter: contrast(100%); */
+    /* filter:drop-shadow(10px 10px blue) */
+    /* filter:grayscale(50%); */
+    /* filter: hue-rotate(90deg); */
+    /* filter: invert(1); */
+    /* filter: opacity(0.5); */
+    transition: all 2s;
+}
+
+.img-card img:hover{
+    filter: hue-rotate(0deg);
+}
+
+/* .img-card-text{
+    position: relative;
+    text-align: center;
+    bottom:30px
+}
+
+.img-card::before{
+    content: "a";
+    display: block;
+    height: 450px;
+    width: 350px;
+    position: absolute;
+    background-color: black;
+    opacity: 0.5;
+} */
