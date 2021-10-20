@@ -32,10 +32,40 @@ var person = {
     age:27,
     profession:['enterprenuer', "Tech Coach"]
 }
-
-console.log(person['profession'])
+console.log(person['profession'][0])
 
 // console.log(greetStr)
+
+
+
+//operators
+
+//Arithmatic Operators
+
+//Addition
+var a = '10'
+var b = 20
+var c = a+b
+
+var a = '100'
+var b = 100
+var c = a - b
+console.log(c)
+
+
+var a = 10
+var b = 20
+var c = a++ + ++b
+
+console.log(a, b, c)
+
+
+
+//program to find cube
+var num = prompt("enter a number")
+var cube = num*num*num
+console.log("cube of the given number is : ", cube)
+
 
 
 
