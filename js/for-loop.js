@@ -16,6 +16,9 @@ for(var i=1; i<=n; i++){
 }
 console.log("total number : " , count)
 
+
+//https://raw.githubusercontent.com/ssuyash/mern-march-21-backup-1/main/js/problem-statemets/loop.txt
+
 if(count > 2){
     console.log("not prime")
 }else{
