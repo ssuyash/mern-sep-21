@@ -2,7 +2,6 @@ function isPrime(number){
     if(number <= 1){
         return false
     }
-
     var prime = true
 
     for(var i=2; i<=number/2; i++ ){
