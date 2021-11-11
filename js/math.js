@@ -1,0 +1,8 @@
+console.log(Math.random())
+var num = 51.25
+
+console.log(Math.round(num))
+console.log(Math.ceil(num))
+console.log(Math.floor(num))
+console.log(Math.pow(2, 3))
+Math.sqrt(25)
