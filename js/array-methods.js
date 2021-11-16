@@ -6674,3 +6674,20 @@ var sorted = uniqArr.sort(function(a, b){
 
 var secondMax = sorted[1]
 console.log(secondMax)
+
+
+var mbls = ["65497654", "9764313", "98451", "8745412"]
+
+var mblStr = mbls.reduce(function(acc, ele, i){
+    if(i == mbls.length-1){
+        return acc+ele
+      }else{
+        return acc+ele+","
+      }
+})
+
+
+console.log(mblStr)
+
+
+var str = mbls.join(",")
