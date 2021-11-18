@@ -117,10 +117,7 @@ var reduced = Array(10).fill(0).reduce(function(acc, el){
     return 5
 })
 
-
 console.log(reduced)
-
-
 
 function myReudce(array, fn, acc){
     var loopStart = 0
@@ -139,3 +136,62 @@ var ans = myReudce([1,3,5], function(acc, el){
 },10 )
 
 console.log(ans)
+
+
+var arr = [1,2,3,4,1,5,1,2,9]
+var countObj = {}
+
+arr.forEach(function(el){
+    if(countObj[el] == undefined){
+        countObj[el] = 1
+    }else{
+        countObj[el] = countObj[el]+1
+    }
+})
+
+console.log(countObj)
+
+
+
+var arr = [
+    [1,2,3, 5],
+    [4,5,6, 9],
+    [7,8,9, 4]
+]
+
+var sumArr = Array(arr[0].length).fill(0)
+
+arr.forEach(function(el){
+    el.forEach(function(e, i){
+        sumArr[i] =  sumArr[i]+ e
+
+    })
+})
+console.log([sumArr]    )
+
+
+
+var obj = {name:"suyash"}
+
+obj["jd"] = "Full Stack Developer"
+console.log(obj["jd"])
+
+obj["jd"] = "Data Scientist"
+console.log(obj["jd"])
+
+
+var data = [["a", 5], ["b", 2], ["c", 9]]
+var keys = ["name", "number"]
+var objArr = []
+
+data.forEach(function(el){
+    var tmp = {}
+    el.forEach(function(e, i){
+       tmp[keys[i]] = e
+
+    })
+    objArr.push(tmp)
+    
+})
+
+console.log(objArr)
