@@ -293,3 +293,40 @@ var arr = [{ name: "a" }, { name: "b" }]
 var search = { name: "a" }
 
 console.log(includes(arr, search))
+
+
+var arr = [1, 2, 3, 5, 0, 5]
+var target = 5
+var chunks = []
+var sumToTarget = []
+
+
+arr.forEach(function(el, i){
+    if(arr[i]+arr[i+1] == target){
+        sumToTarget.push(arr.slice(i, i+2))
+    }
+})
+console.log(sumToTarget)
+
+
+
+arr.forEach(function(el, i){
+    chunks.push(arr.slice(i, i+2))
+})
+
+
+chunks.forEach(function(el){
+    if(el.length==2){
+        var sum = el.reduce(function(acc, ce){
+            return acc+ce
+        })
+
+        if(sum == target){
+            sumToTarget.push(el)
+        }
+    }
+})
+
+
+
+console.log(sumToTarget)
