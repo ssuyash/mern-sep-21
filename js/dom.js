@@ -11,6 +11,8 @@ btn.addEventListener("click", function(event){
     
     var oldText = para.innerText
     para.innerText = oldText+inpVal
+
+    
     // if(oldText == "Hello"){
     //     para.innerText="Bye"
     // }else{
@@ -19,3 +21,16 @@ btn.addEventListener("click", function(event){
 
     console.log(event)
 })
+
+
+
+
+
+
+// setTimeout(function(){
+//     alert("timeout")
+// }, 5000)
+
+// setInterval(function(){
+//   console.log("Hello")
+// }, 5000)

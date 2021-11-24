@@ -52,6 +52,7 @@ function checkIsWinner(checkFor){
 var arr = ['O', 'O', 'O', 'X', '', 'O', 'X', 'X', '']
 var validationData = validateEntries(arr)
 console.log(validationData)
+
 if(validationData.isValid){
     var isXWinner = checkIsWinner("X")
     var isOWinner = checkIsWinner("O")
