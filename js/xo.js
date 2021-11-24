@@ -1,4 +1,3 @@
-var arr = ['X', 'X', 'O', 'X', 'O']
 
 
 function validateEntries(arr){
@@ -33,8 +32,37 @@ var winningPos = [
     [2, 4, 6]
 ]
 
-function checkIsWinner(){
+function checkIsWinner(checkFor){
+    var isWinner = false
+
+    winningPos.forEach(function(pos){
+        var i1 = pos[0]
+        var i2 = pos[1]
+        var i3 = pos[2]
+        if(arr[i1] == checkFor && arr[i2] == checkFor && arr[i3] == checkFor){
+            isWinner = true
+        }
+    })
+
+    return isWinner
     
 }
 
-validateEntries(arr)
+
+var arr = ['O', 'O', 'O', 'X', '', 'O', 'X', 'X', '']
+var validationData = validateEntries(arr)
+console.log(validationData)
+if(validationData.isValid){
+    var isXWinner = checkIsWinner("X")
+    var isOWinner = checkIsWinner("O")
+
+    if(isXWinner){
+        console.log("X Won")
+    }else if(isOWinner){
+        console.log("O won")
+    }else{
+        console.log("Tie till now")
+    }
+}else{
+    console.log("invalid inputs")
+}
