@@ -1,0 +1,12 @@
+div{
+    margin:10px 0px;
+}
+
+div label{
+    display: inline-block;
+    min-width: 150px;
+}
+
+.err{
+    color:red;
+}

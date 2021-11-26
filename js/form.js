@@ -1,8 +1,9 @@
 var btnSave = document.getElementById("btnSave")
+var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
 
 btnSave.addEventListener("click", function(){
     var emailValue = document.getElementById("email").value
-    var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     
     if(!emailPattern.test(emailValue)){
         document.getElementById("emailErr").innerText = "invalid email format"
@@ -12,6 +13,12 @@ btnSave.addEventListener("click", function(){
     }
 
     
+})
+
+
+document.getElementById("frm").addEventListener("submit", function(e){
+    e.preventDefault()
+    alert("form is going to be submitted")
 })
 
 
